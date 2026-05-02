@@ -500,6 +500,29 @@ tbody td{font-size:14px;}
 }
 .refusal-tip{font-size:13px;color:var(--text-m);line-height:1.75;}
 
+/* ══ RANK DETAIL LINK ══ */
+.rank-detail-link{
+  display:block;margin-top:14px;text-align:center;
+  padding:9px 16px;
+  background:linear-gradient(135deg,var(--warm-p),#EDD8BC);
+  border:1.5px solid var(--warm-l);border-radius:22px;
+  color:var(--warm-d);font-size:14px;font-weight:700;
+  text-decoration:none;transition:all .2s;letter-spacing:0.04em;
+}
+.rank-detail-link:hover{
+  background:linear-gradient(135deg,var(--warm-m),var(--warm-d));
+  color:white;border-color:var(--warm-d);
+  box-shadow:0 4px 14px rgba(122,82,48,0.22);
+}
+.qs-step-link{
+  display:inline-flex;align-items:center;gap:5px;
+  margin-top:8px;font-size:13px;font-weight:700;
+  color:#2A6AA0;text-decoration:none;
+  padding:5px 14px;border:1.5px solid #B0CCEE;
+  border-radius:18px;background:#F0F6FF;transition:all .2s;
+}
+.qs-step-link:hover{background:#E0EEFF;border-color:#2A6AA0;}
+
 /* ══ PRINT BUTTON ══ */
 .print-btn-wrap{display:flex;justify-content:flex-end;margin-bottom:16px;}
 .print-btn{
@@ -701,6 +724,7 @@ img,svg,video{max-width:100%;height:auto;}
           <div class="qs-label">今日やること</div>
           <div class="qs-text">モッピー（ポイントサイト）に無料登録する</div>
           <div class="qs-detail">登録後、モッピー経由で「持ち家計画」に申込むと展示場1社あたり10,500円相当のポイントが貰えます。<br>⚠️ 直接申込みは対象外。必ずモッピー経由で！</div>
+          <a href="#card-moppy" class="qs-step-link">📋 モッピーの詳細・手順を見る →</a>
         </div>
         <div class="qs-amount">無料登録<small>所要5分</small></div>
       </div>
@@ -710,6 +734,7 @@ img,svg,video{max-width:100%;height:auto;}
           <div class="qs-label">予約時にやること</div>
           <div class="qs-text">SUUMOで「SUUMO特典」マーク付きの展示場を予約する</div>
           <div class="qs-detail">来場時に「SUUMOを見て予約した」と伝え、パスワードをもらう。<br>来場後14日以内にフォーム入力で1社10,000円分のギフトカード。最大5社で50,000円分！</div>
+          <a href="#card-suumo" class="qs-step-link">📋 SUUMOの詳細・手順を見る →</a>
         </div>
         <div class="qs-amount">最大<br>50,000円<small>5社分</small></div>
       </div>
@@ -719,6 +744,7 @@ img,svg,video{max-width:100%;height:auto;}
           <div class="qs-label">来場当日にやること</div>
           <div class="qs-text">来場後すぐ（当日中に）フォームを入力＆記録をつける</div>
           <div class="qs-detail">SUUMOは14日以内・モッピーは30日以内が期限。来場当日にメモしておくと安心。<br>下のチェックボタンで来場済み管理もできます 👇</div>
+          <a href="#checklist" class="qs-step-link">✅ 準備チェックリストを見る →</a>
         </div>
         <div class="qs-amount">期限厳守<small>忘れると無効</small></div>
       </div>
@@ -744,6 +770,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">最大 50,000円</div>
         <span class="rank-badge badge-mid">条件：中｜先着450名/月</span>
         <div class="rank-note">1社あたり10,000円分 × 最大5社。来場後14日以内にフォーム入力が必須。</div>
+        <a href="#card-suumo" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
       <div class="rank-card">
         <div class="rank-num rn-2">02</div>
@@ -751,6 +778,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">最大 30,000円</div>
         <span class="rank-badge badge-high">条件：高｜ローン審査あり</span>
         <div class="rank-note">WEB予約のみで最大30,000円。ローン事前審査で追加あり。先着10,000組限定。</div>
+        <a href="#card-tamahome" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
       <div class="rank-card">
         <div class="rank-num rn-3">03</div>
@@ -758,6 +786,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">最大 30,000円</div>
         <span class="rank-badge badge-mid">条件：中｜3日前予約必須</span>
         <div class="rank-note">来場希望日の3日前までにWEB予約。身分証提示必須。</div>
+        <a href="#card-yamato" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
       <div class="rank-card">
         <div class="rank-num rn-other">04</div>
@@ -765,6 +794,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">12,000円</div>
         <span class="rank-badge badge-mid">条件：中｜60日以内来場</span>
         <div class="rank-note">ポイントサイト経由で12,000円相当。1社ずつ別申込みで複数獲得可能。</div>
+        <a href="#card-hapitas" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
       <div class="rank-card">
         <div class="rank-num rn-other">05</div>
@@ -772,6 +802,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">10,500円</div>
         <span class="rank-badge badge-mid">条件：中｜30日以内来場</span>
         <div class="rank-note">1社ずつ別申込みで複数社分のポイントを獲得可能。</div>
+        <a href="#card-moppy" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
       <div class="rank-card">
         <div class="rank-num rn-other">06</div>
@@ -779,6 +810,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">最大 35,000P</div>
         <span class="rank-badge badge-high">条件：高｜抽選制</span>
         <div class="rank-note">WEB予約で5,000P確定＋来場後抽選で最大30,000P。当日即時付与。</div>
+        <a href="#card-yamada" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
       <div class="rank-card">
         <div class="rank-num rn-other">07</div>
@@ -786,6 +818,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">最大 10,000円</div>
         <span class="rank-badge badge-low">条件：低｜エリア限定</span>
         <div class="rank-note">5月31日まで。セミナー参加で最大10,000円。対象エリア限定。</div>
+        <a href="#card-porras" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
       <div class="rank-card">
         <div class="rank-num rn-other">08</div>
@@ -793,6 +826,7 @@ img,svg,video{max-width:100%;height:auto;}
         <div class="rank-amount">最大 8,000円</div>
         <span class="rank-badge badge-low">条件：低〜中</span>
         <div class="rank-note">5月25日まで。PayPayポイントで付与。STEP2のイベント参加で3,000P追加。</div>
+        <a href="#card-misawa" class="rank-detail-link">📋 詳細・受取手順を見る →</a>
       </div>
     </div>
 
@@ -848,7 +882,7 @@ img,svg,video{max-width:100%;height:auto;}
 
     <div class="campaign-grid" id="makerGrid">
 
-      <div class="campaign-card" data-difficulty="high" data-gift-type="digital" data-timing="later">
+      <div id="card-tamahome" class="campaign-card" data-difficulty="high" data-gift-type="digital" data-timing="later">
         <div class="card-hdr"><div class="card-hdr-orb"></div><div class="card-hdr-corner"></div>
           <div class="card-company">タマホーム</div>
           <div class="card-amount">最大 <strong>30,000円</strong><span>分 QUOカードPay</span></div>
@@ -863,7 +897,7 @@ img,svg,video{max-width:100%;height:auto;}
         </div>
       </div>
 
-      <div class="campaign-card" data-difficulty="high" data-gift-type="point" data-timing="same-day">
+      <div id="card-yamada" class="campaign-card" data-difficulty="high" data-gift-type="point" data-timing="same-day">
         <div class="card-hdr"><div class="card-hdr-orb"></div><div class="card-hdr-corner"></div>
           <div class="card-company">ヤマダホームズ</div>
           <div class="card-amount">最大 <strong>35,000</strong><span>ポイント ヤマダポイント</span></div>
@@ -878,7 +912,7 @@ img,svg,video{max-width:100%;height:auto;}
         </div>
       </div>
 
-      <div class="campaign-card" data-difficulty="mid" data-gift-type="gift-card" data-timing="later">
+      <div id="card-yamato" class="campaign-card" data-difficulty="mid" data-gift-type="gift-card" data-timing="later">
         <div class="card-hdr"><div class="card-hdr-orb"></div><div class="card-hdr-corner"></div>
           <div class="card-company">ヤマト住建</div>
           <div class="card-amount">最大 <strong>30,000円</strong><span>分 QUOカード</span></div>
@@ -893,7 +927,7 @@ img,svg,video{max-width:100%;height:auto;}
         </div>
       </div>
 
-      <div class="campaign-card" data-difficulty="low" data-gift-type="gift-card" data-timing="later">
+      <div id="card-porras" class="campaign-card" data-difficulty="low" data-gift-type="gift-card" data-timing="later">
         <div class="card-hdr"><div class="card-hdr-orb"></div><div class="card-hdr-corner"></div>
           <div class="card-company">ポラス</div>
           <div class="card-amount">最大 <strong>10,000円</strong><span>分 Amazonギフトカード</span></div>
@@ -909,7 +943,7 @@ img,svg,video{max-width:100%;height:auto;}
         </div>
       </div>
 
-      <div class="campaign-card" data-difficulty="low" data-gift-type="point" data-timing="later">
+      <div id="card-misawa" class="campaign-card" data-difficulty="low" data-gift-type="point" data-timing="later">
         <div class="card-hdr"><div class="card-hdr-orb"></div><div class="card-hdr-corner"></div>
           <div class="card-company">ミサワホーム</div>
           <div class="card-amount">最大 <strong>8,000円</strong><span>分 PayPayポイント</span></div>
@@ -1151,7 +1185,7 @@ img,svg,video{max-width:100%;height:auto;}
     </div>
     <div class="campaign-grid">
 
-      <div class="point-card">
+      <div id="card-hapitas" class="point-card">
         <div class="pt-hdr"><div class="card-hdr-orb"></div>
           <div class="pt-site">ハピタス</div>
           <div class="pt-sub">案件：ホムホム（住宅展示場来場）</div>
@@ -1166,7 +1200,7 @@ img,svg,video{max-width:100%;height:auto;}
         </div>
       </div>
 
-      <div class="point-card">
+      <div id="card-moppy" class="point-card">
         <div class="pt-hdr"><div class="card-hdr-orb"></div>
           <div class="pt-site">モッピー</div>
           <div class="pt-sub">案件：持ち家計画（展示場来場）</div>
@@ -1258,7 +1292,7 @@ img,svg,video{max-width:100%;height:auto;}
     </div>
     <div class="campaign-grid">
 
-      <div class="portal-card">
+      <div id="card-suumo" class="portal-card">
         <div class="portal-hdr"><div class="card-hdr-orb"></div>
           <div class="card-company">SUUMO</div>
           <div class="card-amount">1社 <strong>10,000円</strong><span>分 最大5社で50,000円分</span></div>
